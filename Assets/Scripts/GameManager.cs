@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     // Score
     int maxScore, score, phase;
-    int[] maxScores = { 2, 4, 8 };
+    int[] maxScores = { 2, 4, 8, 6, 12, 9};
     bool noHit;
 
     // UI
@@ -83,7 +83,6 @@ public class GameManager : MonoBehaviour
     void UpdateTime()
     {
         seconds += Time.deltaTime;
-        Debug.Log(seconds);
         if (seconds > 60)
         {
             seconds = 0;
